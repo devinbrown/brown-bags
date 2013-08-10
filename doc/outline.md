@@ -1,83 +1,31 @@
-# Graph Theory & Neo4j
+# Graph Theory
 
-## Relational DB vs Graph Database
+## A Graph What?
 
->While storing a graph in a relational database is simple, querying it, particularly traversing it, can be time-ineﬃcient due to the number of potential joins.
+### 300+ years of graphy
 
-### Why Go to NOSQL?
+Graph databases address one of the great macroscopic business trends of today: lever‐ aging complex and dynamic relationships in highly connected data to generate insight and competitive advantage.
 
-1. Having tables with lots of columns, each of which is only used by a few rows.
-2. Having attribute tables.
-3. Having lots of many-to-many relationships.
-4. Having tree-like characteristics.
-5. Requiring frequent schema changes.
+Today, general-purpose graph databases are a reality, enabling mainstream users to experience the benefits of connected data without having to invest in building their own graph infrastructure
+
+Graph theory was pioneered by Euler in the 18th century, and has been actively researched and improved by mathematicians, sociologists, anthro‐ pologists, and others ever since.
+
+### Nodes, Edges, & Properties
+
+Formally, a graph is just a collection of vertices and edges—or, in less intimidating lan‐ guage, a set of nodes and the relationships that connect them.
 
 
->At small scale,
-MySQL performed slightly better than Neo4j, but scaling
-upward dramatically shifted the search times in favor of
-Neo4j.
+### storage with index-free adjacency
 
->With graph databases, the performance of retrieval queries are tightly linked to
-the indexing service used. Neo4j uses Lucene, which is optimized for full-text
-indexing. Retrieval of other types of data, such as numeric and date are
-signiﬁcanly less eﬃcient.
+By definition, a graph database is any storage system that provides index-free adjacency.
 
-- Neo4j has an easily mutable schema, while relational databases are less mutable.
-- lack of multi user environments
+Every element contains a direct pointer to its adjacent element and no index lookups are necessary.
 
-## Graph Database Overview
-
-- Non-SQL database
-- Utilizing nodes, edges, and properties
-
->By definition, a graph database is any storage system that provides index-free adjacency.
-
->This means that every element contains a direct pointer to its adjacent element and no index lookups are necessary.
-
-![example](http://upload.wikimedia.org/wikipedia/commons/3/3a/GraphDatabase_PropertyGraph.png)
+----
 
 - Nodes are very similar in nature to the objects that object-oriented programmers will be familiar with.
--  graph databases are often faster for associative data sets and map more directly to the structure of object-oriented applications
-- GDBs can scale more naturally to large data sets as they do not typically require expensive join operations
-- As they depend less on a rigid schema
-  - they are more suitable to manage ad-hoc and changing data with evolving schemas
-
->Graph databases are a powerful tool for graph-like queries, for example computing the shortest path between two nodes in the graph
-
-## Neo4j
-
-- 26+ different graph database options out there (that I know of)
-- Neo4j is a big one, but more or less I looked into because the book I had used it :-)
-- implemented in Java
-- open source (yay!)
-
->“Neo4j is an embedded, disk-based, fully transactional Java persistence engine that stores data structured in graphs rather than in tables”
-
-- The developers claim it is exceptionally scalable (several billion nodes on a single machine),
-- has an API that is easy to use, and supports eﬃcient traversals.
-- Neo4j is built using Apache’s Lucene 3
-  - Lucene is a text search engine, written in Java, geared toward high performance
-
-## Usage
-
-- Integrates with rails using JRuby
-- "similar" to activerecord
-
--> examples: http://geekmonkey.org/articles/25-using-neo4j-with-rails-3-2
-
-## Examples
-
-## Further Reading Info
-
-## Refs. / Questions
-
-### A Comparison of a Graph Database and a Relational Database
-
-- http://www.cs.olemiss.edu/~ychen/publications/conference/vicknair_acmse10.pdf
-
-
----
-
-Dag = http://www.angelfire.com/film/burning_crotch/snatch/snatch2.jpg
-DAG = http://en.wikipedia.org/wiki/Directed_acyclic_graph
+- Every element contains a direct pointer to its adjacent element and no index lookups are necessary.
+- Often faster for associative data sets and map more directly to the structure of object-oriented applications
+- Scale more naturally to large data sets as they do not typically require expensive join operations.
+- More forgiving and flexible schema, sutiable to ad-hoc and changing data.
+- A powerful tool for graph-like queries, for example computing the shortest path between two nodes in the graph-like.
