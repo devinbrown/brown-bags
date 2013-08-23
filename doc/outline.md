@@ -1,44 +1,40 @@
-# Graph Theory
+# Graph Databases
+
+[Prezi: GraphDatabases](http://prezi.com/jgx8vrvcntdk/?utm_campaign=share&utm_medium=copy)
 
 ## A Graph What?
 
 ### 300(ish) years of "graphing"
 
-The paper written by Leonhard Euler on the Seven Bridges of Königsberg and
-published in 1736 is regarded as the first paper in the history of graph theory.
+The paper written by **Leonhard Euler** on the **Seven Bridges of Königsberg** and **published in 1736** is regarded as the **first paper in the history of graph theory**.
 
-Graph databases address one of the great macroscopic business trends of today:
-lever‐ aging complex and dynamic relationships in highly connected data to generate insight and competitive
-advantage.
+Graph databases address one of the great macroscopic business trends of today: **leveraging complex and dynamic relationships in highly connected data to generate insight and competitive advantage.**
 
-Today, general-purpose graph databases are a reality, enabling mainstream users
-to experience the benefits of connected data without having to invest in building
-their own graph infrastructure
+Optimally performant when used in memory... 
 
-Graph theory was pioneered by Euler in the 18th century, and has been actively
-researched and improved by mathematicians, sociologists, anthro‐ pologists, and others ever since.
+Although Neo4j does indeed handle ultra-mega-large DB's gracefully.
+
+It's not a cached either, it's a fully persistent transactional store.
+
+Today, general purpose graph databases are a reality, enabling mainstream users to experience the benefits of connected data without having to invest in building their own graph infrastructure
+
+Graph theory was pioneered by Euler in the 18th century, and has been actively researched and improved by mathematicians, sociologists, anthropologists, and others ever since.
 
 ### Nodes, Edges, & Properties
 
-Formally, a graph is just a collection of vertices and edges or, in less intimidating
-language, a set of nodes and the relationships that connect them.
+Formally, a graph is just a collection of vertices and edges or, in less intimidating language, a set of nodes and the relationships that connect them.
 
-**Nodes** represent entities such as people, businesses, accounts, or any other
-item you might want to keep track of.
+**Nodes** represent entities such as people, businesses, accounts, or any other item you might want to keep track of.
 
 ### storage with index-free adjacency
 
-By definition, a graph database is any storage system that provides index-free
-adjacency.
+By definition, a graph database is any storage system that provides index-free adjacency.
 
-Every element contains a direct pointer to its adjacent element and no index
-lookups are necessary.
+Every element contains a direct pointer to its adjacent element and no index lookups are necessary.
 
 ## What's it Worth?
 
-Relational databases were initially designed to codify paper forms and tabular
-structures—something they do exceedingly well—they struggle when attempting
-to model the ad hoc, exceptional relationships that crop up in the real world.
+Relational databases were initially designed to codify paper forms and tabular structures—something they do exceedingly well—they struggle when attempting to model the ad hoc, exceptional relationships that crop up in the real world.
 
 Semantic relationships are hidden in a relational database
 
@@ -59,35 +55,80 @@ An even more expensive example: "Who are Bob's friend's friends?"
 
 ## Depth Comparison
 
->For a social network containing 1,000,000 people, each with approximately 50
-friends...finding extended friends
+>For a social network containing 1,000,000 people, each with approximately 50 friends...finding extended friends
 
->Queries that extend to four, five, or six degrees of friendship deteriorate
-significantly due to the computational and space complexity of recursively joining tables.
+>Queries that extend to four, five, or six degrees of friendship deteriorate significantly due to the computational and space complexity of recursively joining tables.
 
-The flexibility of the graph model has allowed us to add new nodes and new
-relationships without compromising the existing network or migrating data the
-original data and its intent remain intact
+The flexibility of the graph model has allowed us to add new nodes and new relationships without compromising the existing network or migrating data the original data and its intent remain intact
 
-## Last Slide
+## Sorting Through the Selection
 
-### Other Shit I Should Have Had
+A large # of GDB's exist. Roughly 30 well know projects in fact.
 
-- <http://docs.neo4j.org/chunked/stable/rest-api-graph-algos.html>
+### You are the One, Neo.
 
----
+GitHub Stats:
 
-## Hack Notez
+- 338 Stars
+- Issues: 364 / 738 (open / closed)
 
-*Other* concepts connected to the *idea* of **sushi**.
+Community:
+
+- active community with engaged users (good for any OSP)
+
+Licensing:
+
+- Three level of licensing (development / advanced / enterprise)
+  - free / $6000 / $2400
+- worthwhile and useful documentation
+
+Scalability:
+
+- MASSIVE scalability - can easily handle a GDB with several billion nodes / relationships / properties on a single machine.
+- No native sharding - should rarely be needed, but solutions do exist
+
+Performance:
+
+- Obviously out performs a RBD on a number of meaningful use cases.
+- Small footprint:
+  - Neo4j is a single <500k jar with one dependency (the Java Transaction API).
+
+Usability:
+
+- Simple and easy to use OO-API
+- **retrieving children is a trival task**, since the backbone of a GDB is a relationship based structure
+
+Dependency:
+
+- fully transactional
+- Supports JTA / JTS, XA, 2PC, Tx recovery, deadlock detection, etc.
+
+
+## Code Stuff
+
+Overview to the syntax involved when using Neo4j / GQL.
+
+Give some insight to the way in which "traditional" DB's handle their data.
+
+### Adding Nodes
+
+### Adding Relationships
+
+### Return a Single Node
+
+### The Match Clause
+
+### Filtered Matches
+
+### Paths Between Nodes
+
+### Hack Notez (livecode)
 
 ```
 START sushi=node:Concepts(id="/c/en/sushi")
 MATCH sushi-[r]-other_concepts
 RETURN sushi.id, TYPE(r), other_concepts.id;
 ```
-
-
 
 ```
 START delicious=node:Concepts(id="/c/en/delicious")
@@ -102,7 +143,7 @@ MATCH p = AllShortestPaths(sushi-[*..10]-beer)
 RETURN p.weight;
 ```
 
-...returns...
+↓
 
 ```
 [Node[29]{id:"/c/en/sushi"},
@@ -122,3 +163,7 @@ RETURN p.weight;
              context:"all"},
              Node[422]  {id:"/c/en/beer"}]
 ```
+
+## Reflections on Graphing
+
+*Be sure to reference other docs in the browser.*
