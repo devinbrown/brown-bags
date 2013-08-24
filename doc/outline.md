@@ -2,6 +2,15 @@
 
 [Prezi: GraphDatabases](http://prezi.com/jgx8vrvcntdk/?utm_campaign=share&utm_medium=copy)
 
+Overview:
+
+- give a quick background about graph theory
+- look at the abstract implementation of a graph database
+- why would we want to use a graph database?
+- what options are out there, and why pick Neo4j?
+- code samples & some "live code"
+- wrap up and some reflections on GDB
+
 ## A Graph What?
 
 ### 300(ish) years of "graphing"
@@ -103,6 +112,11 @@ Dependency:
 - fully transactional
 - Supports JTA / JTS, XA, 2PC, Tx recovery, deadlock detection, etc.
 
+---
+
+>Separates data and logic with a more "natural" representation than tables. This makes it easy to use Neo4j as the storage tier for OO code while keeping behaviour and state separate.
+
+>Neo4j traverses depths of 1000 levels and beyond at millisecond speed. That's many orders of magnitude faster than relational systems
 
 ## Code Stuff
 
@@ -122,7 +136,9 @@ Give some insight to the way in which "traditional" DB's handle their data.
 
 ### Paths Between Nodes
 
-### Hack Notez (livecode)
+### Hack Notez
+
+Asking for all other concepts connected to the sushi concept, and asking the graph to tell us what type of relationship exists between them.
 
 ```
 START sushi=node:Concepts(id="/c/en/sushi")
@@ -130,12 +146,15 @@ MATCH sushi-[r]-other_concepts
 RETURN sushi.id, TYPE(r), other_concepts.id;
 ```
 
+What's considered delicious?
+
 ```
 START delicious=node:Concepts(id="/c/en/delicious")
 MATCH delicious-[r]-other_concepts
-RETURN TYPE(r), other_concepts.id
+RETURN TYPE(r), other_concepts.id;
 ```
 
+Define two concepts, explain everything in between.
 
 ```
 START sushi=node:Concepts(id="/c/en/sushi"), beer=node:Concepts(id="/c/en/beer")
