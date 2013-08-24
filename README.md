@@ -112,7 +112,6 @@ Dependency:
 - fully transactional
 - Supports JTA / JTS, XA, 2PC, Tx recovery, deadlock detection, etc.
 
-<<<<<<< HEAD
 ---
 
 >Separates data and logic with a more "natural" representation than tables. This makes it easy to use Neo4j as the storage tier for OO code while keeping behaviour and state separate.
