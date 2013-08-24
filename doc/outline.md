@@ -103,24 +103,11 @@ Dependency:
 - fully transactional
 - Supports JTA / JTS, XA, 2PC, Tx recovery, deadlock detection, etc.
 
-
 ## Code Stuff
 
 Overview to the syntax involved when using Neo4j / GQL.
 
 Give some insight to the way in which "traditional" DB's handle their data.
-
-### Adding Nodes
-
-### Adding Relationships
-
-### Return a Single Node
-
-### The Match Clause
-
-### Filtered Matches
-
-### Paths Between Nodes
 
 ### Hack Notez (livecode)
 
@@ -167,3 +154,13 @@ RETURN p.weight;
 ## Reflections on Graphing
 
 *Be sure to reference other docs in the browser.*
+
+### Rails Gem
+
+- https://github.com/andreasronge/neo4j
+
+### Other Docs / References 
+
+- http://graphdatabases.com/
+- https://github.com/jimwebber/neo4j-tutorial
+- http://www.cs.olemiss.edu/~ychen/publications/conference/vicknair_acmse10.pdf
