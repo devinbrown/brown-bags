@@ -19,7 +19,7 @@ The paper written by **Leonhard Euler** on the **Seven Bridges of Königsberg** 
 
 Graph databases address one of the great macroscopic business trends of today: **leveraging complex and dynamic relationships in highly connected data to generate insight and competitive advantage.**
 
-Optimally performant when used in memory... 
+Optimally performant when used in memory...
 
 Although Neo4j does indeed handle ultra-mega-large DB's gracefully.
 
@@ -112,6 +112,7 @@ Dependency:
 - fully transactional
 - Supports JTA / JTS, XA, 2PC, Tx recovery, deadlock detection, etc.
 
+<<<<<<< HEAD
 ---
 
 >Separates data and logic with a more "natural" representation than tables. This makes it easy to use Neo4j as the storage tier for OO code while keeping behaviour and state separate.
@@ -124,21 +125,7 @@ Overview to the syntax involved when using Neo4j / GQL.
 
 Give some insight to the way in which "traditional" DB's handle their data.
 
-### Adding Nodes
-
-### Adding Relationships
-
-### Return a Single Node
-
-### The Match Clause
-
-### Filtered Matches
-
-### Paths Between Nodes
-
-### Hack Notez
-
-Asking for all other concepts connected to the sushi concept, and asking the graph to tell us what type of relationship exists between them.
+### Hack Notez (livecode)
 
 ```
 START sushi=node:Concepts(id="/c/en/sushi")
@@ -186,3 +173,13 @@ RETURN p.weight;
 ## Reflections on Graphing
 
 *Be sure to reference other docs in the browser.*
+
+### Rails Gem
+
+- https://github.com/andreasronge/neo4j
+
+### Other Docs / References
+
+- http://graphdatabases.com/
+- https://github.com/jimwebber/neo4j-tutorial
+- http://www.cs.olemiss.edu/~ychen/publications/conference/vicknair_acmse10.pdf
