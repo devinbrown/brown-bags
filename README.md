@@ -88,7 +88,7 @@ Community:
 Licensing:
 
 - Three level of licensing (development / advanced / enterprise)
-  - free / $6000 / $2400
+  - free / $6000 / $24000
 - worthwhile and useful documentation
 
 Scalability:
