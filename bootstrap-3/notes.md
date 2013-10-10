@@ -11,6 +11,50 @@
 - CSS AutoMagic™ for responsive layouts and mobile devices
 - requires jQuery for JS functionality…
 
+### Major Features
+
+### Base CSS
+
+1. Typography
+2. Code
+3. Tables
+4. Forms
+5. Buttons
+6. Images
+7. Icons
+
+### Components
+
+1. Dropdowns
+2. Button Groups
+3. Button Dropdowns
+4. Navs
+5. Navbar
+6. Breadcrumbs
+7. Pagination
+8. Labels & Badges
+9. Typography (bold, italics, alignment, etc)
+10. Thumbnails
+11. Alerts
+12. Progress Bars
+13. Media Object
+14. Other / Misc.
+
+### Javascript
+
+1. Transitions
+2. Modal
+3. Scrollspy
+4. Tab
+5. Tooltip
+6. Popover
+7. Alert
+8. Button
+9. Collapse
+10. Carousel
+11. Typahead (*\*ahem\* TBLOGS*)
+12. Affix
+
 ## What's New?
 
 ### Browser Support
@@ -32,6 +76,61 @@
 ```
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 ```
+
+### Changes
+
+#### Overall
+
+1. Mobile First
+2. Naming Conventions
+3. No IE7 Support
+4. Combined Responsive / CSS Files
+5. Retina Image Mixins
+6. *Flat Design\**
+
+#### Grid System
+
+1. *Adios* **fluid** grid layout
+   - NEW! single grid system (`%` not `px`)
+   - more other more subtle mods, for mobile 1st
+
+#### Buttons
+
+1. minor changes to button class naming
+2. no longer support the inverse button class
+
+#### Forms
+
+1. no longe support `.form-search`
+2. mobile 1st design / layout
+   - horizontal forms are stacked
+   
+#### Icons
+
+1. Using Glyphicons v1.7 / no more PNGS
+
+#### Hero / Jumbotron
+
+1. Scale `font-size` in responsive views
+
+#### Navs / Navbars
+
+1. no longer support `.navbar-search`
+2. "overhaul" of navbar styling
+   - no more fugly gradients / box-shadow
+3. other misc. class / naming changes
+
+#### Dropdowns
+
+1. no more submenu support
+
+#### Modals
+
+1. mostly the same, some class naming / organaztion of containers
+
+#### Carousel
+
+1. total redesign
 
 ### Mobile First
 
@@ -180,4 +279,12 @@
 
 - <http://englishrussia.com/>
 
-## Real world Usage
+## Final Thoughts	
+
+### Leveraging BS in a UX / UI Dev-World
+
+Big Question: how can we make this work with a UI that may not necissarily conform to bootstrap out of the box? 
+
+- extracting the compontents we need and using them
+- heavy customization of the framework (no need to reinvent a reponsive system)
+- alternatively...side projects are a great place to thow this in the mix

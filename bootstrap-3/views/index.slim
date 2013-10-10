@@ -6,7 +6,152 @@ html
     title Mother Russia
 
   body
-    h1 A HEADING
 
-  script src="http://code.jquery.com/jquery-1.10.1.min.js"
-  script src="js/bootstrap.min.js"
+    nav.navbar.navbar-default role="navigation"
+      .container
+        .navbar-header
+          button.navbar-toggle data-target=".navbar-ex1-collapse" data-toggle="collapse" type="button"
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand href="#"
+        .collapse.navbar-collapse.navbar-ex1-collapse
+          ul.nav.navbar-nav
+            li.active
+              a href="#" Home
+            li
+              a href="#" About
+            li
+              a href="#" Submit
+            li
+              a href="#" YouTube
+            li
+              a href="#" Twitter
+            li
+              a href="#" Facebook
+
+    .container
+
+      .jumbotron
+        .row
+          .col-sm-8
+            h1 English Russia
+            h3 Only in Russia
+          .col-sm-4.hidden-sm.hidden-xs
+            blockquote
+              div
+                strong
+                  | Главная контора
+              div
+                em
+                  | In Mother Russia, Website Makes You!
+
+      .row
+
+        .col-md-8
+          #carousel-example-generic.carousel.slide.bs-docs-carousel-example
+            ol.carousel-indicators
+              li data-slide-to="0" data-target="#carousel-example-generic"
+              li.active data-slide-to="1" data-target="#carousel-example-generic"
+              li data-slide-to="2" data-target="#carousel-example-generic"
+            .carousel-inner
+              .item
+                img alt="First slide" src="image/01.jpg"
+                .carousel-caption
+                  h3 This is a Boat
+                  h5 It may have problems floating.
+              .item.active
+                img alt="Second slide" src="image/02.jpg"
+                .carousel-caption
+              .item
+                img alt="Third slide" src="image/03.jpg"
+                .carousel-caption
+
+            a.left.carousel-control data-slide="prev" href="#carousel-example-generic"
+              span.icon-prev
+            a.right.carousel-control data-slide="next" href="#carousel-example-generic"
+              span.icon-next
+
+        .col-md-4
+          ul.list-group
+            li.list-group-item
+              span.badge 982
+              a href="#" Automotive
+            li.list-group-item
+              span.badge 401
+              a href="#" Business
+            li.list-group-item
+              span.badge 1688
+              a href="#" Culture
+            li.list-group-item
+              span.badge 394
+              a href="#" Economics
+            li.list-group-item
+              span.badge 1241
+              a href="#" Exclusive
+            li.list-group-item
+              span.badge 64
+              a href="#" Fiction
+            li.list-group-item
+              span.badge 394
+              a href="#" History
+            li.list-group-item
+              span.badge 153
+              a href="#" Law
+            li.list-group-item
+              span.badge 6730
+              a href="#" Photos
+            li.list-group-item
+              span.badge 824
+              a href="#" Russian Army
+
+      .row
+        .col-md-8
+          h3 About English Russia
+          p
+            | English Russia has started as a personal blog of Igor S, young Russian gentleman who was  not satisfied with the situation, when the lots of things happening in Russia have not been covered by the larger mass media. So he started blogging about things that were often outlooked by the media giants and pretty fast this proved to be interesting and exciting – both for him and for his numerous readers that started to like the blog. In a matter of just one year it was cited as a one of the most popular blogs in the world. The founder himself preferred to use the pen name of Tim (standing for the “TEAM” – English Russia team which consisted at the time of just one person).
+          p
+            | Now it is a popular daily entertaiment but still personal blog devoted to the events happening in Russian speaking countries, such as Russia (Russian Federation), Ukraine, Belarus, Moldova, Kazakhstan, etc. Everyday something interesting happens in the countries occupying 1/6 of the populated world. Igor with couple of his assistants  are here to inform you about those events, often overlooked by others.
+
+          button.btn.btn-primary.btn-lg.btn-block type="button" Subscribe
+          button.btn.btn-default.btn-lg.btn-block type="button" Share
+
+
+        .col-md-4
+          h3 Content Contributors
+          table.table.table-striped
+            thead
+              th User #
+              th Name
+              th Posts
+            tbody
+              tr
+                td 1
+                td James Bond
+                td 007
+              tr
+                td 2
+                td Vladmir Putin
+                td 1952
+              tr
+                td 3
+                td Joseph Heller
+                td 22
+              tr
+                td 4
+                td Ernst Stavro Blofeld
+                td 64
+
+      hr
+
+      .row
+        .col-md-12.text-center
+          p
+            em Если у вас есть интересные истории, фотографии или видео из России – пишите.
+          p
+            em Contact English Russia team by englishrussia@gmail.com
+
+/ JavaScriptz iZ W1NZ
+script src="http://code.jquery.com/jquery-1.10.1.min.js"
+script src="js/bootstrap.min.js"
