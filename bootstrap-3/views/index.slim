@@ -64,9 +64,13 @@ html
               .item.active
                 img alt="Second slide" src="image/02.jpg"
                 .carousel-caption
+                  h3 Superior Russia Tech
+                  h5 This cockpit has downed many US Spy Planes.
               .item
                 img alt="Third slide" src="image/03.jpg"
                 .carousel-caption
+                  h3 Kaboom!
+                  h5 We are ready.
 
             a.left.carousel-control data-slide="prev" href="#carousel-example-generic"
               span.icon-prev
@@ -110,7 +114,7 @@ html
         .col-md-8
           h3 About English Russia
           p
-            | English Russia has started as a personal blog of Igor S, young Russian gentleman who was  not satisfied with the situation, when the lots of things happening in Russia have not been covered by the larger mass media. So he started blogging about things that were often outlooked by the media giants and pretty fast this proved to be interesting and exciting – both for him and for his numerous readers that started to like the blog. In a matter of just one year it was cited as a one of the most popular blogs in the world. The founder himself preferred to use the pen name of Tim (standing for the “TEAM” – English Russia team which consisted at the time of just one person).
+            | English Russia has started as a personal blog of Igor S, young Russian gentleman who was  not satisfied with the situation, when the lots of things happening in Russia have not been covered by the larger mass media. So he started blogging about things that were often outlooked by the media giants and pretty fast this proved to be interesting and exciting – both for him and for his numerous readers that started to like the blog. In a matter of just one year it was cited as a one of the most popular blogs in the world. The founder himself preferred to use the pen name of <a id="popover-example" data-toggle="popover">Tim.</a>
           p
             | Now it is a popular daily entertaiment but still personal blog devoted to the events happening in Russian speaking countries, such as Russia (Russian Federation), Ukraine, Belarus, Moldova, Kazakhstan, etc. Everyday something interesting happens in the countries occupying 1/6 of the populated world. Igor with couple of his assistants  are here to inform you about those events, often overlooked by others.
 
@@ -127,22 +131,37 @@ html
               th Posts
             tbody
               tr
-                td 1
-                td James Bond
                 td 007
+                td Javier Bardem
+                td 929
               tr
-                td 2
-                td Vladmir Putin
-                td 1952
+                td 82
+                td Mr. Big
+                td 602
               tr
-                td 3
-                td Joseph Heller
-                td 22
+                td 8
+                td Auric Goldfinger
+                td 601
               tr
-                td 4
+                td 99
                 td Ernst Stavro Blofeld
-                td 64
-
+                td 555
+              tr
+                td 974
+                td Milton Krest
+                td 409
+              tr
+                td 638
+                td Emilio Largo
+                td 301
+              tr
+                td 2929
+                td Ernst Stavro Blofeld
+                td 258
+              tr
+                td 9981
+                td Mr. Sanguinetti
+                td 101
       hr
 
       .row
@@ -150,8 +169,11 @@ html
           p
             em Если у вас есть интересные истории, фотографии или видео из России – пишите.
           p
-            em Contact English Russia team by englishrussia@gmail.com
+            em Contact English Russia team by mother@land.ru
 
 / JavaScriptz iZ W1NZ
 script src="http://code.jquery.com/jquery-1.10.1.min.js"
 script src="js/bootstrap.min.js"
+
+javascript:
+  $('#popover-example').popover({placement: "left", title: "About Me", content: "There's only one dev in this shop!"});

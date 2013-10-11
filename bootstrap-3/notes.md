@@ -275,7 +275,7 @@
 
 ## Demo
 
->Restyle an "ancient" Russian website using nothing but BS 3.0 (aside from colors). Timebox to about 2 hours.
+>Restyle an "ancient" Russian website using nothing but BS 3.0. Timebox to about 2 hours.
 
 - <http://englishrussia.com/>
 
